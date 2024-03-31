@@ -12,14 +12,12 @@ import { playlists } from "@/lib/data";
     <div class="bg-zinc-900 rounded-lg p-2">
         <ul>
             <SideMenuItem href="/">
-                <SideMenuItem href="/">
-                    <HomeIcon />
-                    Inicio
-                </SideMenuItem>
-                <SideMenuItem href="/#">
-                    <SearchIcon />
-                    Buscar
-                </SideMenuItem>
+                <HomeIcon />
+                Inicio
+            </SideMenuItem>
+            <SideMenuItem href="/#">
+                <SearchIcon />
+                Buscar
             </SideMenuItem>
         </ul>
     </div>
@@ -29,7 +27,7 @@ import { playlists } from "@/lib/data";
                 <LibraryIcon />
                 Tu biblioteca
             </SideMenuItem>
-           
+
             {playlists.map((playlist) => <SideMenuCard playlist={playlist} />)}
         </ul>
     </div>
